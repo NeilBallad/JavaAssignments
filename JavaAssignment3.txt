@@ -5,8 +5,8 @@ public class JavaAssignment3 {
     public static void SwapNumber(int num1, int num2) {
 
         //initialize variable
-        int x = num1; // assign the num1 parameter to x
-        int y = num2; // assign the num2 parameter to y
+        int x = num1; 
+        int y = num2; 
         int temp = 0;
         System.out.println("Before Swap");
 
