@@ -1,0 +1,22 @@
+public class JavaAssignment2 {
+
+    // create a method to find the cube and square of a given number
+
+    public static void displayCubeAndSquare(int givenNumber) {
+
+        // the Math class has a method for finding the square and cube 
+
+        System.out.println("Square of " + givenNumber + " is: " + Math.pow(givenNumber, 2));
+        System.out.println("Cube of " + givenNumber + " is: " + Math.pow(givenNumber, 3));
+
+    }
+
+    public static void main(String[] args) {
+
+            int num = 5;
+
+            displayCubeAndSquare(num);
+
+    }
+
+}

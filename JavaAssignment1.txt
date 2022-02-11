@@ -1,0 +1,55 @@
+public class JavaAssignment1 {
+
+    //find the greatest number
+
+    //create a method for finding the largest number in an array
+
+    // the method accept 2 parameter the array and the size of the array
+
+
+    /*
+    To find the largest element of the given array, first of all, sort the array.
+
+    -Sorting an array
+    -Compare the first two elements of the array
+    -If the first element is greater than the second swap them.
+    -Then, compare 2nd and 3rd elements if the second element is greater than the 3rd swap them.
+    -Repeat this till the end of the array.
+    -After sorting an array print the 1st element from the end of the array.
+    */
+    public static int getLargest(int[] a, int arraySize){
+
+        int temp;
+
+
+
+        for (int i = 0; i < arraySize; i++)
+                {
+                    for (int j = i + 1; j < arraySize; j++)
+                    {
+                        if (a[i] > a[j])
+                        {
+                            temp = a[i];
+                            a[i] = a[j];
+                            a[j] = temp;
+                        }
+                    }
+                }
+               return a[arraySize-1];  // return the value of the element 
+        }
+
+
+
+    public static void main(String[] args) {
+
+        // create an array with 5 elements
+        int a[]={1,54,5,6,23};
+
+        //call the method and print the output
+        System.out.println("the largest number in the array is: " + getLargest(a,5));
+
+
+
+    }
+
+}
